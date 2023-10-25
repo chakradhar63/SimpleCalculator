@@ -1,5 +1,5 @@
 ---
-- name: Pull Docker Image of Calculator
+- name: Pull Docker image of Calculator
   hosts: all
   vars:
     ansible_python_interpreter: /usr/bin/python3
@@ -8,20 +8,9 @@
       docker_image:
         name: chakradhar63/simplecalculator:latest
         source: pull
-      register: image_pull_result
-      ignore_errors: yes  # This allows the playbook to continue even if image pull fails
-
-    - name: Start Docker service
+    - name: Start docker service
       service:
         name: docker
         state: started
-      become: yes  # This may require elevated privileges to start the service
-
     - name: Running container
       shell: docker run -it -d --name Calculator chakradhar63/simplecalculator
-      become: yes  # This may require elevated privileges to run Docker commands
-
-    - name: Handle image pull failure
-      fail:
-        msg: "Failed to pull Docker image."
-      when: image_pull_result.failed
