@@ -16,7 +16,7 @@ public class Main {
 
         do{
             System.out.println("------------Calculator--------------");
-            System.out.println("Choices of Operations:");
+            System.out.println("Choices of Opeations:");
             System.out.println(" ");
             System.out.println("1. Square root");
             System.out.println("2. Factorial");
