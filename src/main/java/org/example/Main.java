@@ -15,7 +15,7 @@ public class Main {
         int numm;
 
         do{
-            System.out.println("------------Calculator--------------");
+            System.out.println("------------ Calculator --------------");
             System.out.println("Choices of Opeations:");
             System.out.println(" ");
             System.out.println("1. Square root");
