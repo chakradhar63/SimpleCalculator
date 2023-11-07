@@ -17,8 +17,8 @@ public class Main {
             System.out.println("Operation:\n");
             System.out.println("1. Add");
             System.out.println("2. Subtract");
-            System.out.println("3. Power");
-            System.out.println("4. Multiply");
+            System.out.println("3. Multiply");
+            System.out.println("4. Percentile");
             System.out.println("5. Exit\n");
             System.out.print("Enter your choice(number): \n");
             op = reader.nextInt();
@@ -35,7 +35,7 @@ public class Main {
                         add(num,exp);
                         break;
 
-                    case 2: //Subtract
+                    case 2: // Subtract
                         System.out.println("Subtract two numbers!!\n");
                         System.out.print("Enter number1: \n");
                         num = reader.nextInt();
@@ -44,22 +44,23 @@ public class Main {
                         subt(num,exp);
                         break;
 
-                    case 3: //Power
-                        System.out.println("Power two numbers!!\n");
-                        System.out.print("Enter number1: \n");
-                        num = reader.nextInt();
-                        System.out.print("Enter number2: \n");
-                        exp = reader.nextInt();
-                        per(num,exp);
-                        break;
-
-                    case 4: //Power
+                    case 3: // Muktiply
                         System.out.println("Multiply two numbers!!\n");
                         System.out.print("Enter number1: \n");
                         num = reader.nextInt();
                         System.out.print("Enter number2: \n");
                         exp = reader.nextInt();
                         mul(num,exp);
+                        break;
+                        
+
+                    case 4: // Percentile
+                        System.out.println("Percentile two numbers!!\n");
+                        System.out.print("Enter number1: \n");
+                        num = reader.nextInt();
+                        System.out.print("Enter number2: \n");
+                        exp = reader.nextInt();
+                        per(num,exp);
                         break;
 
                     default:
