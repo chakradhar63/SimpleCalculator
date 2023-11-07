@@ -23,7 +23,7 @@ pipeline{
                 }
             }
         }
-        stage('Stage 4: Push docker image to hub') {
+        stage('Stage 4: Push Docker Image to DockerHub') {
             steps{
                 script{
                     docker.withRegistry('', 'DockerHubCred'){
