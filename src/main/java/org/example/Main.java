@@ -14,12 +14,12 @@ public class Main {
         int num, exp;
 
         do{
-            System.out.println("Operation:\n");
+            System.out.println("Operation: \n");
             System.out.println("1. Add");
             System.out.println("2. Subtract");
             System.out.println("3. Multiply");
             System.out.println("4. Percentile");
-            System.out.println("5. Exit\n");
+            System.out.println("5. Exit \n");
             System.out.print("Enter your choice(number): \n");
             op = reader.nextInt();
             if(op==5) flag = 1;
